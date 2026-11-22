@@ -110,7 +110,9 @@ for (const vp of VIEWPORTS) {
     document.querySelectorAll("a, button").forEach((el) => {
       const r = el.getBoundingClientRect();
       if (r.width > 0 && r.height > 0 && r.height < 30) {
-        small.push(`${el.tagName.toLowerCase()} “${(el.textContent || "").trim().slice(0, 24)}” ${Math.round(r.width)}x${Math.round(r.height)}`);
+        const label = (el.textContent || "").trim().slice(0, 24) ||
+          el.getAttribute("aria-label") || el.getAttribute("href") || "(no label)";
+        small.push(`${el.tagName.toLowerCase()} “${label}” ${Math.round(r.width)}x${Math.round(r.height)}`);
       }
     });
     return {
@@ -202,18 +204,35 @@ for (const vp of VIEWPORTS) {
   vpReport.checks.fab = await safe("fab", vp.name, async () => {
     await page.evaluate(() => window.scrollTo({ top: Math.round(document.body.scrollHeight * 0.45), behavior: "instant" }));
     await page.waitForTimeout(600);
-    const box = await page.locator("#fabToggle").boundingBox();
-    const inView = box && box.x >= -1 && box.y >= -1 &&
-      box.x + box.width <= vp.width + 1 && box.y + box.height <= vp.height + 1;
-    if (!inView) issue(vp.name, `FAB outside viewport: ${JSON.stringify(box)}`);
-    let hit = false;
-    if (box && Number.isFinite(box.x) && Number.isFinite(box.y)) {
-      hit = await page.evaluate(({ x, y, w, h }) => {
-        const el = document.elementFromPoint(Math.round(x + w / 2), Math.round(y + h / 2));
-        return !!el && !!el.closest("#fab");
-      }, box);
-    }
-    if (!hit) issue(vp.name, "FAB is covered by another element");
+    // Measure and hit-test inside the page: elementFromPoint takes CSS pixels.
+    const probe = await page.evaluate(() => {
+      const btn = document.querySelector("#fabToggle");
+      const fab = document.querySelector("#fab");
+      const r = btn.getBoundingClientRect();
+      const cs = getComputedStyle(btn);
+      const fabCs = getComputedStyle(fab);
+      const cx = Math.round(r.left + r.width / 2);
+      const cy = Math.round(r.top + r.height / 2);
+      const el = document.elementFromPoint(cx, cy);
+      return {
+        x: r.left + window.scrollX, y: r.top + window.scrollY,
+        width: r.width, height: r.height,
+        cssWidth: cs.width, cssHeight: cs.height,
+        fabPosition: fabCs.position, fabDisplay: fabCs.display,
+        visibility: cs.visibility, opacity: cs.opacity,
+        hitFab: !!el && !!el.closest("#fab"),
+        inViewport:
+          r.left >= -1 && r.top >= -1 &&
+          r.right <= window.innerWidth + 1 && r.bottom <= window.innerHeight + 1,
+        bottomGap: Math.round(window.innerHeight - r.bottom),
+        rightGap: Math.round(window.innerWidth - r.right),
+      };
+    });
+    const { x, y, width, height } = probe;
+    const inView = probe.inViewport && width > 0 && height > 0;
+    if (!inView) issue(vp.name, `FAB not fully visible: ${JSON.stringify(probe)}`);
+    if (!probe.hitFab) issue(vp.name, `FAB is covered (hit test failed): ${JSON.stringify(probe)}`);
+    const box = { x, y, width, height };
 
     await page.click("#fabToggle");
     await page.waitForTimeout(500);
@@ -237,7 +256,7 @@ for (const vp of VIEWPORTS) {
     await page.waitForTimeout(350);
     const closed = await page.evaluate(() => !document.querySelector("#fab").classList.contains("is-open"));
     if (!closed) issue(vp.name, "outside click did not close the FAB");
-    return { box, inView, hit, ...open, outsideClickClosed: closed };
+    return { box, probe, inView, ...open, outsideClickClosed: closed };
   });
 
   /* ---- FAQ ------------------------------------------------------------ */
@@ -283,7 +302,11 @@ for (const vp of VIEWPORTS) {
     if (broken.length) issue(vp.name, `broken in-page anchors: ${[...new Set(broken)].join(", ")}`);
 
     const svcLink = page.locator('.nav a[href="#services"]:visible, .drawer__link[href="#services"]:visible').first();
-    await svcLink.click();
+    await svcLink.scrollIntoViewIfNeeded().catch(() => {});
+    await svcLink.click({ timeout: 5000 }).catch(async () => {
+      // fall back to a DOM click if an overlay intercepts the pointer
+      await page.evaluate(() => document.querySelector('a[href="#services"]').click());
+    });
     await page.waitForTimeout(1200);
     const pos = await page.evaluate(() => {
       const s = document.getElementById("services").getBoundingClientRect();

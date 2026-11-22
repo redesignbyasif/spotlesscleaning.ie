@@ -642,7 +642,7 @@ body.menu-open .drawer__contact { animation: drawerIn 0.5s var(--ease-out) 0.32s
   text-transform: uppercase;
   color: var(--muted);
 }
-.hero__caption span:last-child { color: var(--purple-deep); }
+.hero__caption span:last-child { color: var(--purple-deep); display: inline-block; min-height: 22px; }
 
 .bloom-mark {
   --bloom-mask: 1;
@@ -1046,6 +1046,7 @@ body.menu-open .drawer__contact { animation: drawerIn 0.5s var(--ease-out) 0.32s
 .shot--wide { grid-column: span 2; }
 .shot--wide img { aspect-ratio: 16 / 9; }
 .gallery__note {
+  min-height: 24px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
