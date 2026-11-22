@@ -1626,7 +1626,6 @@ body.menu-open .fab { opacity: 0; visibility: hidden; }
   .case:first-child { grid-column: span 3; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); }
   .gallery__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.75rem; }
   .shot--wide { grid-column: span 2; }
-  .shot--wide img { aspect-ratio: 2 / 1; }
   .clients__track { gap: 3.5rem; }
   .clients__group { gap: 3.5rem; }
   .number { padding: 1.6rem 1.35rem; }
