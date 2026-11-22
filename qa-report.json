@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T14:21:27.801Z",
+  "generated": "2026-11-22T14:25:23.869Z",
   "base": "http://127.0.0.1:8080/",
   "viewports": [
     {
@@ -13,8 +13,8 @@
           "brokenImages": [],
           "missingAlt": 0,
           "smallTargets": [
-            "a “” 158x12",
-            "a “” 190x14"
+            "a “Spotless Cleaning — back to top” 158x12",
+            "a “Spotless Cleaning — back to top” 190x14"
           ],
           "headerHeight": 68,
           "h1Count": 1,
@@ -34,7 +34,35 @@
           "escapeClosed": true,
           "focusReturned": true
         },
-        "fab": null,
+        "fab": {
+          "box": {
+            "x": 288,
+            "y": 7389,
+            "width": 58,
+            "height": 58
+          },
+          "probe": {
+            "x": 288,
+            "y": 7389,
+            "width": 58,
+            "height": 58,
+            "cssWidth": "58px",
+            "cssHeight": "58px",
+            "fabPosition": "fixed",
+            "fabDisplay": "flex",
+            "visibility": "visible",
+            "opacity": "1",
+            "hitFab": true,
+            "inViewport": true,
+            "bottomGap": 14,
+            "rightGap": 14
+          },
+          "inView": true,
+          "isOpen": true,
+          "allVisibleInView": true,
+          "ariaExpanded": "true",
+          "outsideClickClosed": true
+        },
         "faq": {
           "expanded": "true",
           "panelHeight": 144,
@@ -42,7 +70,10 @@
           "othersClosed": true,
           "collapsedHeight": 0
         },
-        "anchor": null,
+        "anchor": {
+          "sectionTop": 82,
+          "headerH": 68
+        },
         "console": {
           "errors": 0,
           "failures": 0
@@ -60,8 +91,8 @@
           "brokenImages": [],
           "missingAlt": 0,
           "smallTargets": [
-            "a “” 172x13",
-            "a “” 190x14"
+            "a “Spotless Cleaning — back to top” 172x13",
+            "a “Spotless Cleaning — back to top” 190x14"
           ],
           "headerHeight": 68,
           "h1Count": 1,
@@ -81,7 +112,35 @@
           "escapeClosed": true,
           "focusReturned": true
         },
-        "fab": null,
+        "fab": {
+          "box": {
+            "x": 318,
+            "y": 7394,
+            "width": 58,
+            "height": 58
+          },
+          "probe": {
+            "x": 318,
+            "y": 7394,
+            "width": 58,
+            "height": 58,
+            "cssWidth": "58px",
+            "cssHeight": "58px",
+            "fabPosition": "fixed",
+            "fabDisplay": "flex",
+            "visibility": "visible",
+            "opacity": "1",
+            "hitFab": true,
+            "inViewport": true,
+            "bottomGap": 14,
+            "rightGap": 14
+          },
+          "inView": true,
+          "isOpen": true,
+          "allVisibleInView": true,
+          "ariaExpanded": "true",
+          "outsideClickClosed": true
+        },
         "faq": {
           "expanded": "true",
           "panelHeight": 144,
@@ -89,7 +148,10 @@
           "othersClosed": true,
           "collapsedHeight": 0
         },
-        "anchor": null,
+        "anchor": {
+          "sectionTop": 83,
+          "headerH": 68
+        },
         "console": {
           "errors": 0,
           "failures": 0
@@ -107,8 +169,8 @@
           "brokenImages": [],
           "missingAlt": 0,
           "smallTargets": [
-            "a “” 189x14",
-            "a “” 190x14"
+            "a “Spotless Cleaning — back to top” 189x14",
+            "a “Spotless Cleaning — back to top” 190x14"
           ],
           "headerHeight": 68,
           "h1Count": 1,
@@ -128,7 +190,35 @@
           "escapeClosed": true,
           "focusReturned": true
         },
-        "fab": null,
+        "fab": {
+          "box": {
+            "x": 358,
+            "y": 7460,
+            "width": 58,
+            "height": 58
+          },
+          "probe": {
+            "x": 358,
+            "y": 7460,
+            "width": 58,
+            "height": 58,
+            "cssWidth": "58px",
+            "cssHeight": "58px",
+            "fabPosition": "fixed",
+            "fabDisplay": "flex",
+            "visibility": "visible",
+            "opacity": "1",
+            "hitFab": true,
+            "inViewport": true,
+            "bottomGap": 14,
+            "rightGap": 14
+          },
+          "inView": true,
+          "isOpen": true,
+          "allVisibleInView": true,
+          "ariaExpanded": "true",
+          "outsideClickClosed": true
+        },
         "faq": {
           "expanded": "true",
           "panelHeight": 119,
@@ -136,7 +226,10 @@
           "othersClosed": true,
           "collapsedHeight": 0
         },
-        "anchor": null,
+        "anchor": {
+          "sectionTop": 83,
+          "headerH": 68
+        },
         "console": {
           "errors": 0,
           "failures": 0
@@ -154,8 +247,8 @@
           "brokenImages": [],
           "missingAlt": 0,
           "smallTargets": [
-            "a “” 196x15",
-            "a “” 190x14"
+            "a “Spotless Cleaning — back to top” 196x15",
+            "a “Spotless Cleaning — back to top” 190x14"
           ],
           "headerHeight": 76,
           "h1Count": 1,
@@ -166,7 +259,35 @@
           "toggleHidden": false,
           "phoneVisible": false
         },
-        "fab": null,
+        "fab": {
+          "box": {
+            "x": 688,
+            "y": 5948,
+            "width": 58,
+            "height": 58
+          },
+          "probe": {
+            "x": 688,
+            "y": 5948,
+            "width": 58,
+            "height": 58,
+            "cssWidth": "58px",
+            "cssHeight": "58px",
+            "fabPosition": "fixed",
+            "fabDisplay": "flex",
+            "visibility": "visible",
+            "opacity": "1",
+            "hitFab": true,
+            "inViewport": true,
+            "bottomGap": 22,
+            "rightGap": 22
+          },
+          "inView": true,
+          "isOpen": true,
+          "allVisibleInView": true,
+          "ariaExpanded": "true",
+          "outsideClickClosed": true
+        },
         "faq": {
           "expanded": "true",
           "panelHeight": 119,
@@ -174,7 +295,10 @@
           "othersClosed": true,
           "collapsedHeight": 0
         },
-        "anchor": null,
+        "anchor": {
+          "sectionTop": 91,
+          "headerH": 76
+        },
         "console": {
           "errors": 0,
           "failures": 0
@@ -192,8 +316,8 @@
           "brokenImages": [],
           "missingAlt": 0,
           "smallTargets": [
-            "a “” 206x16",
-            "a “” 190x14"
+            "a “Spotless Cleaning — back to top” 206x16",
+            "a “Spotless Cleaning — back to top” 190x14"
           ],
           "headerHeight": 84,
           "h1Count": 1,
@@ -204,7 +328,35 @@
           "toggleHidden": true,
           "phoneVisible": true
         },
-        "fab": null,
+        "fab": {
+          "box": {
+            "x": 944,
+            "y": 5141,
+            "width": 58,
+            "height": 58
+          },
+          "probe": {
+            "x": 944,
+            "y": 5141,
+            "width": 58,
+            "height": 58,
+            "cssWidth": "58px",
+            "cssHeight": "58px",
+            "fabPosition": "fixed",
+            "fabDisplay": "flex",
+            "visibility": "visible",
+            "opacity": "1",
+            "hitFab": true,
+            "inViewport": true,
+            "bottomGap": 22,
+            "rightGap": 22
+          },
+          "inView": true,
+          "isOpen": true,
+          "allVisibleInView": true,
+          "ariaExpanded": "true",
+          "outsideClickClosed": true
+        },
         "faq": {
           "expanded": "true",
           "panelHeight": 94,
@@ -233,8 +385,8 @@
           "brokenImages": [],
           "missingAlt": 0,
           "smallTargets": [
-            "a “” 206x16",
-            "a “” 190x14"
+            "a “Spotless Cleaning — back to top” 206x16",
+            "a “Spotless Cleaning — back to top” 190x14"
           ],
           "headerHeight": 84,
           "h1Count": 1,
@@ -245,7 +397,35 @@
           "toggleHidden": true,
           "phoneVisible": true
         },
-        "fab": null,
+        "fab": {
+          "box": {
+            "x": 1200,
+            "y": 5406,
+            "width": 58,
+            "height": 58
+          },
+          "probe": {
+            "x": 1200,
+            "y": 5406,
+            "width": 58,
+            "height": 58,
+            "cssWidth": "58px",
+            "cssHeight": "58px",
+            "fabPosition": "fixed",
+            "fabDisplay": "flex",
+            "visibility": "visible",
+            "opacity": "1",
+            "hitFab": true,
+            "inViewport": true,
+            "bottomGap": 22,
+            "rightGap": 22
+          },
+          "inView": true,
+          "isOpen": true,
+          "allVisibleInView": true,
+          "ariaExpanded": "true",
+          "outsideClickClosed": true
+        },
         "faq": {
           "expanded": "true",
           "panelHeight": 70,
@@ -254,7 +434,7 @@
           "collapsedHeight": 0
         },
         "anchor": {
-          "sectionTop": 99,
+          "sectionTop": 98,
           "headerH": 84
         },
         "console": {
@@ -274,8 +454,8 @@
           "brokenImages": [],
           "missingAlt": 0,
           "smallTargets": [
-            "a “” 206x16",
-            "a “” 190x14"
+            "a “Spotless Cleaning — back to top” 206x16",
+            "a “Spotless Cleaning — back to top” 190x14"
           ],
           "headerHeight": 84,
           "h1Count": 1,
@@ -286,7 +466,35 @@
           "toggleHidden": true,
           "phoneVisible": true
         },
-        "fab": null,
+        "fab": {
+          "box": {
+            "x": 1360,
+            "y": 5563,
+            "width": 58,
+            "height": 58
+          },
+          "probe": {
+            "x": 1360,
+            "y": 5563,
+            "width": 58,
+            "height": 58,
+            "cssWidth": "58px",
+            "cssHeight": "58px",
+            "fabPosition": "fixed",
+            "fabDisplay": "flex",
+            "visibility": "visible",
+            "opacity": "1",
+            "hitFab": true,
+            "inViewport": true,
+            "bottomGap": 22,
+            "rightGap": 22
+          },
+          "inView": true,
+          "isOpen": true,
+          "allVisibleInView": true,
+          "ariaExpanded": "true",
+          "outsideClickClosed": true
+        },
         "faq": {
           "expanded": "true",
           "panelHeight": 70,
@@ -295,7 +503,7 @@
           "collapsedHeight": 0
         },
         "anchor": {
-          "sectionTop": 98,
+          "sectionTop": 99,
           "headerH": 84
         },
         "console": {
@@ -306,23 +514,12 @@
     }
   ],
   "issues": [
-    "360-mobile :: tap targets under 30px: a “” 158x12 | a “” 190x14",
-    "360-mobile :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
-    "360-mobile :: anchor threw: locator.click: Timeout 30000ms exceeded.",
-    "390-mobile :: tap targets under 30px: a “” 172x13 | a “” 190x14",
-    "390-mobile :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
-    "390-mobile :: anchor threw: locator.click: Timeout 30000ms exceeded.",
-    "430-mobile :: tap targets under 30px: a “” 189x14 | a “” 190x14",
-    "430-mobile :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
-    "430-mobile :: anchor threw: locator.click: Timeout 30000ms exceeded.",
-    "768-tablet :: tap targets under 30px: a “” 196x15 | a “” 190x14",
-    "768-tablet :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
-    "768-tablet :: anchor threw: locator.click: Timeout 30000ms exceeded.",
-    "1024-laptop :: tap targets under 30px: a “” 206x16 | a “” 190x14",
-    "1024-laptop :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
-    "1280-desktop :: tap targets under 30px: a “” 206x16 | a “” 190x14",
-    "1280-desktop :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
-    "1440-desktop :: tap targets under 30px: a “” 206x16 | a “” 190x14",
-    "1440-desktop :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite."
+    "360-mobile :: tap targets under 30px: a “Spotless Cleaning — back to top” 158x12 | a “Spotless Cleaning — back to top” 190x14",
+    "390-mobile :: tap targets under 30px: a “Spotless Cleaning — back to top” 172x13 | a “Spotless Cleaning — back to top” 190x14",
+    "430-mobile :: tap targets under 30px: a “Spotless Cleaning — back to top” 189x14 | a “Spotless Cleaning — back to top” 190x14",
+    "768-tablet :: tap targets under 30px: a “Spotless Cleaning — back to top” 196x15 | a “Spotless Cleaning — back to top” 190x14",
+    "1024-laptop :: tap targets under 30px: a “Spotless Cleaning — back to top” 206x16 | a “Spotless Cleaning — back to top” 190x14",
+    "1280-desktop :: tap targets under 30px: a “Spotless Cleaning — back to top” 206x16 | a “Spotless Cleaning — back to top” 190x14",
+    "1440-desktop :: tap targets under 30px: a “Spotless Cleaning — back to top” 206x16 | a “Spotless Cleaning — back to top” 190x14"
   ]
 }
