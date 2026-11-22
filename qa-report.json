@@ -1,0 +1,482 @@
+{
+  "generated": "2026-11-22T14:16:16.801Z",
+  "base": "http://127.0.0.1:8080/",
+  "viewports": [
+    {
+      "name": "360-mobile",
+      "size": "360x780",
+      "checks": {
+        "layout": {
+          "scrollWidth": 360,
+          "innerWidth": 360,
+          "offenders": [],
+          "brokenImages": [
+            "http://127.0.0.1:8080/assets/images/service-gutter-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-carpet-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-floor-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-softwash-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-carpet-3x2-1040.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp",
+            "http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp",
+            "http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp"
+          ],
+          "missingAlt": 0,
+          "smallTargets": [
+            "a “” 158x12",
+            "a “Facebook” 59x22",
+            "a “Instagram” 60x22",
+            "a “Ask for a window quote” 186x25",
+            "a “Gutters, fascia & soffit” 215x25",
+            "a “Carpets & upholstery” 197x25",
+            "a “Floor cleaning & polishi” 240x25",
+            "a “Power & soft washing” 202x25",
+            "a “Repeat maintenance” 192x25",
+            "a “087 053 1782” 83x19"
+          ],
+          "headerHeight": 68,
+          "h1Count": 1,
+          "imgCount": 20
+        },
+        "drawer": {
+          "visible": true,
+          "ariaExpanded": "true",
+          "ariaHidden": "false",
+          "scrollLocked": true,
+          "focusInside": true,
+          "firstLinkTop": 88,
+          "lastLinkBottom": 391,
+          "viewportHeight": 780,
+          "ctaVisible": true,
+          "drawerScrollable": false,
+          "escapeClosed": true,
+          "focusReturned": true
+        },
+        "fab": null,
+        "faq": {
+          "expanded": "true",
+          "panelHeight": 144,
+          "textVisible": true,
+          "othersClosed": true,
+          "collapsedHeight": 0
+        },
+        "anchor": null,
+        "console": {
+          "errors": 0,
+          "failures": 0
+        }
+      }
+    },
+    {
+      "name": "390-mobile",
+      "size": "390x844",
+      "checks": {
+        "layout": {
+          "scrollWidth": 390,
+          "innerWidth": 390,
+          "offenders": [],
+          "brokenImages": [
+            "http://127.0.0.1:8080/assets/images/service-carpet-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-floor-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-softwash-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-carpet-3x2-1040.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp",
+            "http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp",
+            "http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp"
+          ],
+          "missingAlt": 0,
+          "smallTargets": [
+            "a “” 172x13",
+            "a “Facebook” 59x22",
+            "a “Instagram” 60x22",
+            "a “Ask for a window quote” 186x25",
+            "a “Gutters, fascia & soffit” 215x25",
+            "a “Carpets & upholstery” 197x25",
+            "a “Floor cleaning & polishi” 240x25",
+            "a “Power & soft washing” 202x25",
+            "a “Repeat maintenance” 192x25",
+            "a “087 053 1782” 83x19"
+          ],
+          "headerHeight": 68,
+          "h1Count": 1,
+          "imgCount": 20
+        },
+        "drawer": {
+          "visible": true,
+          "ariaExpanded": "true",
+          "ariaHidden": "false",
+          "scrollLocked": true,
+          "focusInside": true,
+          "firstLinkTop": 88,
+          "lastLinkBottom": 404,
+          "viewportHeight": 844,
+          "ctaVisible": true,
+          "drawerScrollable": false,
+          "escapeClosed": true,
+          "focusReturned": true
+        },
+        "fab": null,
+        "faq": {
+          "expanded": "true",
+          "panelHeight": 144,
+          "textVisible": true,
+          "othersClosed": true,
+          "collapsedHeight": 0
+        },
+        "anchor": null,
+        "console": {
+          "errors": 0,
+          "failures": 0
+        }
+      }
+    },
+    {
+      "name": "430-mobile",
+      "size": "430x932",
+      "checks": {
+        "layout": {
+          "scrollWidth": 430,
+          "innerWidth": 430,
+          "offenders": [],
+          "brokenImages": [
+            "http://127.0.0.1:8080/assets/images/service-carpet-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-floor-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-softwash-3x2-760.webp",
+            "http://127.0.0.1:8080/assets/images/service-carpet-3x2-1040.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp",
+            "http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp",
+            "http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp"
+          ],
+          "missingAlt": 0,
+          "smallTargets": [
+            "a “” 189x14",
+            "a “Facebook” 59x22",
+            "a “Instagram” 60x22",
+            "a “Window cleaning & glass ” 337x25",
+            "a “Ask for a window quote” 186x25",
+            "a “Gutters, fascia & soffit” 215x25",
+            "a “Carpets & upholstery” 197x25",
+            "a “Floor cleaning & polishi” 240x25",
+            "a “Power & soft washing” 202x25",
+            "a “Repeat maintenance” 192x25"
+          ],
+          "headerHeight": 68,
+          "h1Count": 1,
+          "imgCount": 20
+        },
+        "drawer": {
+          "visible": true,
+          "ariaExpanded": "true",
+          "ariaHidden": "false",
+          "scrollLocked": true,
+          "focusInside": true,
+          "firstLinkTop": 88,
+          "lastLinkBottom": 420,
+          "viewportHeight": 932,
+          "ctaVisible": true,
+          "drawerScrollable": false,
+          "escapeClosed": true,
+          "focusReturned": true
+        },
+        "fab": null,
+        "faq": {
+          "expanded": "true",
+          "panelHeight": 119,
+          "textVisible": true,
+          "othersClosed": true,
+          "collapsedHeight": 0
+        },
+        "anchor": null,
+        "console": {
+          "errors": 0,
+          "failures": 0
+        }
+      }
+    },
+    {
+      "name": "768-tablet",
+      "size": "768x1024",
+      "checks": {
+        "layout": {
+          "scrollWidth": 768,
+          "innerWidth": 768,
+          "offenders": [],
+          "brokenImages": [
+            "http://127.0.0.1:8080/assets/images/service-carpet-3x2-1040.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp",
+            "http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp",
+            "http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp"
+          ],
+          "missingAlt": 0,
+          "smallTargets": [
+            "a “” 196x15",
+            "a “Facebook” 59x22",
+            "a “Instagram” 60x22",
+            "a “Ask for a window quote” 186x25",
+            "a “087 053 1782” 83x19",
+            "a “info@spotlesscleaning.ie” 168x19",
+            "a “Open in Google Maps” 185x28",
+            "a “Call 087 053 1782” 156x28",
+            "a “087 053 1782 — call or t” 210x24",
+            "a “info@spotlesscleaning.ie” 210x24"
+          ],
+          "headerHeight": 76,
+          "h1Count": 1,
+          "imgCount": 20
+        },
+        "nav": {
+          "navVisible": false,
+          "toggleHidden": false,
+          "phoneVisible": false
+        },
+        "fab": null,
+        "faq": {
+          "expanded": "true",
+          "panelHeight": 119,
+          "textVisible": true,
+          "othersClosed": true,
+          "collapsedHeight": 0
+        },
+        "anchor": null,
+        "console": {
+          "errors": 0,
+          "failures": 0
+        }
+      }
+    },
+    {
+      "name": "1024-laptop",
+      "size": "1024x768",
+      "checks": {
+        "layout": {
+          "scrollWidth": 1024,
+          "innerWidth": 1024,
+          "offenders": [],
+          "brokenImages": [
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp",
+            "http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp",
+            "http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp"
+          ],
+          "missingAlt": 0,
+          "smallTargets": [
+            "a “” 206x16",
+            "a “Ask for a window quote” 186x25",
+            "a “087 053 1782” 83x19",
+            "a “info@spotlesscleaning.ie” 168x19",
+            "a “Open in Google Maps” 185x28",
+            "a “Call 087 053 1782” 156x28",
+            "a “087 053 1782 — call or t” 210x24",
+            "a “info@spotlesscleaning.ie” 210x24",
+            "a “41 Knights Wood, Droghed” 210x24",
+            "a “” 190x14"
+          ],
+          "headerHeight": 84,
+          "h1Count": 1,
+          "imgCount": 20
+        },
+        "nav": {
+          "navVisible": true,
+          "toggleHidden": true,
+          "phoneVisible": true
+        },
+        "fab": null,
+        "faq": {
+          "expanded": "true",
+          "panelHeight": 94,
+          "textVisible": true,
+          "othersClosed": true,
+          "collapsedHeight": 0
+        },
+        "anchor": {
+          "sectionTop": 99,
+          "headerH": 84
+        },
+        "console": {
+          "errors": 0,
+          "failures": 0
+        }
+      }
+    },
+    {
+      "name": "1280-desktop",
+      "size": "1280x900",
+      "checks": {
+        "layout": {
+          "scrollWidth": 1280,
+          "innerWidth": 1280,
+          "offenders": [],
+          "brokenImages": [
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp",
+            "http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp",
+            "http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp"
+          ],
+          "missingAlt": 0,
+          "smallTargets": [
+            "a “” 206x16",
+            "a “Ask for a window quote” 186x25",
+            "a “087 053 1782” 83x19",
+            "a “info@spotlesscleaning.ie” 168x19",
+            "a “Open in Google Maps” 185x28",
+            "a “Call 087 053 1782” 156x28",
+            "a “087 053 1782 — call or t” 210x24",
+            "a “info@spotlesscleaning.ie” 210x24",
+            "a “41 Knights Wood, Droghed” 210x24",
+            "a “” 190x14"
+          ],
+          "headerHeight": 84,
+          "h1Count": 1,
+          "imgCount": 20
+        },
+        "nav": {
+          "navVisible": true,
+          "toggleHidden": true,
+          "phoneVisible": true
+        },
+        "fab": null,
+        "faq": {
+          "expanded": "true",
+          "panelHeight": 70,
+          "textVisible": true,
+          "othersClosed": true,
+          "collapsedHeight": 0
+        },
+        "anchor": {
+          "sectionTop": 99,
+          "headerH": 84
+        },
+        "console": {
+          "errors": 0,
+          "failures": 0
+        }
+      }
+    },
+    {
+      "name": "1440-desktop",
+      "size": "1440x960",
+      "checks": {
+        "layout": {
+          "scrollWidth": 1440,
+          "innerWidth": 1440,
+          "offenders": [],
+          "brokenImages": [
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp",
+            "http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp",
+            "http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp",
+            "http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp",
+            "http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp",
+            "http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp"
+          ],
+          "missingAlt": 0,
+          "smallTargets": [
+            "a “” 206x16",
+            "a “Ask for a window quote” 186x25",
+            "a “087 053 1782” 83x19",
+            "a “info@spotlesscleaning.ie” 168x19",
+            "a “Open in Google Maps” 185x28",
+            "a “Call 087 053 1782” 156x28",
+            "a “087 053 1782 — call or t” 210x24",
+            "a “info@spotlesscleaning.ie” 210x24",
+            "a “41 Knights Wood, Droghed” 210x24",
+            "a “” 190x14"
+          ],
+          "headerHeight": 84,
+          "h1Count": 1,
+          "imgCount": 20
+        },
+        "nav": {
+          "navVisible": true,
+          "toggleHidden": true,
+          "phoneVisible": true
+        },
+        "fab": null,
+        "faq": {
+          "expanded": "true",
+          "panelHeight": 70,
+          "textVisible": true,
+          "othersClosed": true,
+          "collapsedHeight": 0
+        },
+        "anchor": {
+          "sectionTop": 98,
+          "headerH": 84
+        },
+        "console": {
+          "errors": 0,
+          "failures": 0
+        }
+      }
+    }
+  ],
+  "issues": [
+    "360-mobile :: broken images: http://127.0.0.1:8080/assets/images/service-gutter-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-carpet-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-floor-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-softwash-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-carpet-3x2-1040.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp, http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp, http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp",
+    "360-mobile :: tap targets under 30px: a “” 158x12 | a “Facebook” 59x22 | a “Instagram” 60x22 | a “Ask for a window quote” 186x25 | a “Gutters, fascia & soffit” 215x25 | a “Carpets & upholstery” 197x25 | a “Floor cleaning & polishi” 240x25 | a “Power & soft washing” 202x25 | a “Repeat maintenance” 192x25 | a “087 053 1782” 83x19",
+    "360-mobile :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
+    "360-mobile :: anchor threw: locator.click: Timeout 30000ms exceeded.",
+    "390-mobile :: broken images: http://127.0.0.1:8080/assets/images/service-carpet-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-floor-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-softwash-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-carpet-3x2-1040.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp, http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp, http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp",
+    "390-mobile :: tap targets under 30px: a “” 172x13 | a “Facebook” 59x22 | a “Instagram” 60x22 | a “Ask for a window quote” 186x25 | a “Gutters, fascia & soffit” 215x25 | a “Carpets & upholstery” 197x25 | a “Floor cleaning & polishi” 240x25 | a “Power & soft washing” 202x25 | a “Repeat maintenance” 192x25 | a “087 053 1782” 83x19",
+    "390-mobile :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
+    "390-mobile :: anchor threw: locator.click: Timeout 30000ms exceeded.",
+    "430-mobile :: broken images: http://127.0.0.1:8080/assets/images/service-carpet-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-floor-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-softwash-3x2-760.webp, http://127.0.0.1:8080/assets/images/service-carpet-3x2-1040.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp, http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp, http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp",
+    "430-mobile :: tap targets under 30px: a “” 189x14 | a “Facebook” 59x22 | a “Instagram” 60x22 | a “Window cleaning & glass ” 337x25 | a “Ask for a window quote” 186x25 | a “Gutters, fascia & soffit” 215x25 | a “Carpets & upholstery” 197x25 | a “Floor cleaning & polishi” 240x25 | a “Power & soft washing” 202x25 | a “Repeat maintenance” 192x25",
+    "430-mobile :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
+    "430-mobile :: anchor threw: locator.click: Timeout 30000ms exceeded.",
+    "768-tablet :: broken images: http://127.0.0.1:8080/assets/images/service-carpet-3x2-1040.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp, http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp, http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp",
+    "768-tablet :: tap targets under 30px: a “” 196x15 | a “Facebook” 59x22 | a “Instagram” 60x22 | a “Ask for a window quote” 186x25 | a “087 053 1782” 83x19 | a “info@spotlesscleaning.ie” 168x19 | a “Open in Google Maps” 185x28 | a “Call 087 053 1782” 156x28 | a “087 053 1782 — call or t” 210x24 | a “info@spotlesscleaning.ie” 210x24",
+    "768-tablet :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
+    "768-tablet :: anchor threw: locator.click: Timeout 30000ms exceeded.",
+    "1024-laptop :: broken images: http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp, http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp, http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp",
+    "1024-laptop :: tap targets under 30px: a “” 206x16 | a “Ask for a window quote” 186x25 | a “087 053 1782” 83x19 | a “info@spotlesscleaning.ie” 168x19 | a “Open in Google Maps” 185x28 | a “Call 087 053 1782” 156x28 | a “087 053 1782 — call or t” 210x24 | a “info@spotlesscleaning.ie” 210x24 | a “41 Knights Wood, Droghed” 210x24 | a “” 190x14",
+    "1024-laptop :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
+    "1280-desktop :: broken images: http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp, http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp, http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp",
+    "1280-desktop :: tap targets under 30px: a “” 206x16 | a “Ask for a window quote” 186x25 | a “087 053 1782” 83x19 | a “info@spotlesscleaning.ie” 168x19 | a “Open in Google Maps” 185x28 | a “Call 087 053 1782” 156x28 | a “087 053 1782 — call or t” 210x24 | a “info@spotlesscleaning.ie” 210x24 | a “41 Knights Wood, Droghed” 210x24 | a “” 190x14",
+    "1280-desktop :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite.",
+    "1440-desktop :: broken images: http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/work-van-autumn-16x9-600.webp, http://127.0.0.1:8080/assets/images/work-townley-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-carpark-3x2-506.webp, http://127.0.0.1:8080/assets/images/work-bellingham-3x4-226.webp, http://127.0.0.1:8080/assets/images/service-gutter-3x2-520.webp, http://127.0.0.1:8080/assets/images/detail-glass-4x5-520.webp, http://127.0.0.1:8080/assets/images/cta-van-16x9-1600.webp",
+    "1440-desktop :: tap targets under 30px: a “” 206x16 | a “Ask for a window quote” 186x25 | a “087 053 1782” 83x19 | a “info@spotlesscleaning.ie” 168x19 | a “Open in Google Maps” 185x28 | a “Call 087 053 1782” 156x28 | a “087 053 1782 — call or t” 210x24 | a “info@spotlesscleaning.ie” 210x24 | a “41 Knights Wood, Droghed” 210x24 | a “” 190x14",
+    "1440-desktop :: fab threw: page.evaluate: TypeError: Failed to execute 'elementFromPoint' on 'Document': The provided double value is non-finite."
+  ]
+}
