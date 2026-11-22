@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T14:35:57.635Z",
+  "generated": "2026-11-22T14:40:36.111Z",
   "base": "http://127.0.0.1:8080/",
   "viewports": [
     {
@@ -33,26 +33,26 @@
         },
         "fab": {
           "box": {
-            "x": 288,
-            "y": 7364,
-            "width": 58,
-            "height": 58
+            "x": 294,
+            "y": 7370,
+            "width": 54,
+            "height": 54
           },
           "probe": {
-            "x": 288,
-            "y": 7364,
-            "width": 58,
-            "height": 58,
-            "cssWidth": "58px",
-            "cssHeight": "58px",
+            "x": 294,
+            "y": 7370,
+            "width": 54,
+            "height": 54,
+            "cssWidth": "54px",
+            "cssHeight": "54px",
             "fabPosition": "fixed",
             "fabDisplay": "flex",
             "visibility": "visible",
             "opacity": "1",
             "hitFab": true,
             "inViewport": true,
-            "bottomGap": 14,
-            "rightGap": 14
+            "bottomGap": 12,
+            "rightGap": 12
           },
           "inView": true,
           "isOpen": true,
@@ -108,26 +108,26 @@
         },
         "fab": {
           "box": {
-            "x": 318,
-            "y": 7366,
-            "width": 58,
-            "height": 58
+            "x": 324,
+            "y": 7372,
+            "width": 54,
+            "height": 54
           },
           "probe": {
-            "x": 318,
-            "y": 7366,
-            "width": 58,
-            "height": 58,
-            "cssWidth": "58px",
-            "cssHeight": "58px",
+            "x": 324,
+            "y": 7372,
+            "width": 54,
+            "height": 54,
+            "cssWidth": "54px",
+            "cssHeight": "54px",
             "fabPosition": "fixed",
             "fabDisplay": "flex",
             "visibility": "visible",
             "opacity": "1",
             "hitFab": true,
             "inViewport": true,
-            "bottomGap": 14,
-            "rightGap": 14
+            "bottomGap": 12,
+            "rightGap": 12
           },
           "inView": true,
           "isOpen": true,
@@ -183,26 +183,26 @@
         },
         "fab": {
           "box": {
-            "x": 358,
-            "y": 7432,
-            "width": 58,
-            "height": 58
+            "x": 364,
+            "y": 7438,
+            "width": 54,
+            "height": 54
           },
           "probe": {
-            "x": 358,
-            "y": 7432,
-            "width": 58,
-            "height": 58,
-            "cssWidth": "58px",
-            "cssHeight": "58px",
+            "x": 364,
+            "y": 7438,
+            "width": 54,
+            "height": 54,
+            "cssWidth": "54px",
+            "cssHeight": "54px",
             "fabPosition": "fixed",
             "fabDisplay": "flex",
             "visibility": "visible",
             "opacity": "1",
             "hitFab": true,
             "inViewport": true,
-            "bottomGap": 14,
-            "rightGap": 14
+            "bottomGap": 12,
+            "rightGap": 12
           },
           "inView": true,
           "isOpen": true,
@@ -249,14 +249,14 @@
         },
         "fab": {
           "box": {
-            "x": 688,
-            "y": 5922,
+            "x": 686,
+            "y": 5920,
             "width": 58,
             "height": 58
           },
           "probe": {
-            "x": 688,
-            "y": 5922,
+            "x": 686,
+            "y": 5920,
             "width": 58,
             "height": 58,
             "cssWidth": "58px",
@@ -267,8 +267,8 @@
             "opacity": "1",
             "hitFab": true,
             "inViewport": true,
-            "bottomGap": 22,
-            "rightGap": 22
+            "bottomGap": 24,
+            "rightGap": 24
           },
           "inView": true,
           "isOpen": true,
@@ -315,14 +315,14 @@
         },
         "fab": {
           "box": {
-            "x": 944,
-            "y": 5116,
+            "x": 942,
+            "y": 5187,
             "width": 58,
             "height": 58
           },
           "probe": {
-            "x": 944,
-            "y": 5116,
+            "x": 942,
+            "y": 5187,
             "width": 58,
             "height": 58,
             "cssWidth": "58px",
@@ -333,8 +333,8 @@
             "opacity": "1",
             "hitFab": true,
             "inViewport": true,
-            "bottomGap": 22,
-            "rightGap": 22
+            "bottomGap": 24,
+            "rightGap": 24
           },
           "inView": true,
           "isOpen": true,
@@ -381,14 +381,14 @@
         },
         "fab": {
           "box": {
-            "x": 1200,
-            "y": 5373,
+            "x": 1198,
+            "y": 5460,
             "width": 58,
             "height": 58
           },
           "probe": {
-            "x": 1200,
-            "y": 5373,
+            "x": 1198,
+            "y": 5460,
             "width": 58,
             "height": 58,
             "cssWidth": "58px",
@@ -399,8 +399,8 @@
             "opacity": "1",
             "hitFab": true,
             "inViewport": true,
-            "bottomGap": 22,
-            "rightGap": 22
+            "bottomGap": 24,
+            "rightGap": 24
           },
           "inView": true,
           "isOpen": true,
@@ -447,14 +447,14 @@
         },
         "fab": {
           "box": {
-            "x": 1360,
-            "y": 5529,
+            "x": 1358,
+            "y": 5617,
             "width": 58,
             "height": 58
           },
           "probe": {
-            "x": 1360,
-            "y": 5529,
+            "x": 1358,
+            "y": 5617,
             "width": 58,
             "height": 58,
             "cssWidth": "58px",
@@ -465,8 +465,8 @@
             "opacity": "1",
             "hitFab": true,
             "inViewport": true,
-            "bottomGap": 22,
-            "rightGap": 22
+            "bottomGap": 24,
+            "rightGap": 24
           },
           "inView": true,
           "isOpen": true,
