@@ -621,7 +621,7 @@ body.menu-open .drawer__contact { animation: drawerIn 0.5s var(--ease-out) 0.32s
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 52% 42%;
+  object-position: 52% 46%;
 }
 .hero__frame::after {
   content: "";
