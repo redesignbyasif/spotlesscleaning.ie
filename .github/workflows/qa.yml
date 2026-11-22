@@ -1,0 +1,37 @@
+name: Visual QA
+
+on:
+  push:
+    branches: [main, arena/0009fe00-spotlesscleaning-ie]
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install browser tooling
+        run: |
+          npm init -y >/dev/null 2>&1 || true
+          npm i --no-save playwright@1.47.2
+          npx playwright install --with-deps chromium
+      - name: Serve site
+        run: |
+          python3 -m http.server 8080 --bind 127.0.0.1 &
+          sleep 2
+          curl -sf -o /dev/null http://127.0.0.1:8080/ && echo "server ok"
+      - name: Run QA script
+        run: node qa/qa.mjs
+      - name: Upload artefacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-screenshots
+          path: qa/out/
+          if-no-files-found: warn
