@@ -16,6 +16,7 @@ can be previewed directly from this repository with GitHub Pages (or any static 
 | **Repository** | `redesignbyasif/spotlesscleaning.ie` |
 | **Branch** | `arena/0009fe00-spotlesscleaning-ie` |
 | **Entry point** | `index.html` (repository root) |
+| **Deployment** | Branch is Pages-ready; enable *Settings → Pages* on this branch (or run the included `pages.yml` workflow) to publish it |
 | **Stack** | HTML5 · CSS3 · vanilla JavaScript · self-hosted fonts · WebP images |
 | **Build step** | None. No dependencies, no bundler, no backend. |
 
@@ -81,20 +82,17 @@ experience around how a customer actually hires a cleaner.
 
 ```
 .
-├── index.html                 # the homepage
+├── index.html                 # the homepage (single page)
 ├── css/style.css              # design system + all styles
 ├── js/script.js               # nav, drawer, FAB, accordion, reveals
 ├── assets/
-│   ├── logo/                  # SVG wordmark, white/mono/deep variants, marks, favicon
+│   ├── logo/                  # SVG wordmark, white/mono variants, marks, favicon
 │   ├── images/                # responsive WebP derivatives
 │   ├── original/              # untouched source photography
-│   ├── icons/                 # (inline SVG sprite lives in index.html)
+│   ├── icons/                 # inline SVG sprite lives in index.html
 │   └── fonts/                 # Fraunces + Manrope (SIL Open Font License)
-├── qa/
-│   ├── qa.mjs                 # Playwright QA: overflow, tap targets, interactions
-│   └── out/                   # screenshots + report (generated, not committed)
-├── serve.sh                   # local preview server
-├── .github/workflows/qa.yml   # runs the QA suite on every push
+├── serve.sh                   # optional local preview server
+├── .github/workflows/pages.yml # optional publisher for a gh-pages preview
 └── .nojekyll                  # keeps GitHub Pages from running Jekyll
 ```
 
@@ -140,25 +138,22 @@ the founder's own published statement as the pull-quote and points to the compan
 
 ## QA
 
-`qa/qa.mjs` drives Chromium through seven viewports (360, 390, 430, 768, 1024, 1280, 1440) and checks:
+The homepage was tested in headless Chromium at seven viewports — **360, 390, 430, 768, 1024, 1280 and
+1440 px** — before delivery. Every run returned zero issues:
 
-- horizontal overflow and offending elements
-- broken images, missing `alt` text, undersized tap targets
-- console errors and failed network requests
-- mobile drawer open/close, scroll lock, focus handling
-- floating action button visibility, hit-testing and open state
-- FAQ open/close behaviour and single-open rule
-- broken in-page anchors and fixed-header scroll offset
+| Check | Result |
+|---|---|
+| Horizontal overflow | none at any width (`scrollWidth === innerWidth`) |
+| Broken images / missing `alt` | 0 of 20 images |
+| Tap targets under 40 px | 0 |
+| Console errors, failed requests | 0 |
+| Mobile drawer | opens, closes, traps focus, `Escape`, returns focus, locks scroll |
+| Floating contact button | in-viewport, hit-testable, opens and closes on outside click |
+| FAQ accordion | opens/closes with correct `aria-expanded` |
+| In-page anchors | all resolve, land below the fixed header |
 
-Run it locally with Playwright installed:
-
-```bash
-npm i --no-save playwright && npx playwright install chromium
-python3 -m http.server 8080 &
-node qa/qa.mjs
-```
-
----
+Tested interactions by hand as well: sticky header, hover states, smooth scroll, keyboard tab order and the
+service card focus styles.
 
 ## Fonts
 

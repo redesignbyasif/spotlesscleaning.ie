@@ -1,6 +1,5 @@
-qa/out/
-qa/screenshots/
-qa-report.json
+# local QA scratch (not part of the delivered site)
+qa/
 node_modules/
 package.json
 package-lock.json
