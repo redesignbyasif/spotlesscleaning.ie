@@ -203,7 +203,8 @@
         <div class="hero__visual">
           <div class="hero__frame">
             <picture>
-              <source type="image/webp" srcset="assets/images/hero-window-4x5-560.webp 560w, assets/images/hero-window-4x5-760.webp 760w, assets/images/hero-window-4x5-980.webp 980w, assets/images/hero-window-4x5-1158.webp 1158w" sizes="(min-width: 1024px) 46vw, 92vw">
+              <source type="image/webp" media="(max-width: 767px)" srcset="assets/images/hero-window-4x5-560.webp 560w, assets/images/hero-window-4x5-760.webp 760w" sizes="92vw">
+              <source type="image/webp" srcset="assets/images/hero-window-4x5-760.webp 760w, assets/images/hero-window-4x5-980.webp 980w, assets/images/hero-window-4x5-1158.webp 1158w" sizes="(min-width: 1024px) 46vw, 46vw">
               <img src="assets/images/hero-window-4x5-1158.webp" width="1158" height="1448" alt="A Spotless Cleaning technician washing an upper sash window with a water-fed pole on a Georgian red-brick townhouse" fetchpriority="high" decoding="async">
             </picture>
             <div class="hero__badge">
@@ -307,15 +308,15 @@
         <!-- Feature -->
         <article class="service service--feature" data-reveal>
           <div class="service__media">
-            <img src="assets/images/hero-window-4x5-980.webp" width="980" height="1225" loading="lazy" decoding="async"
-                 alt="Spotless Cleaning technician using a carbon-fibre water-fed pole on a tall Georgian window">
+            <img src="assets/images/feature-window-3x2-760.webp" width="760" height="507" loading="lazy" decoding="async"
+                 alt="The soft bristle head of a carbon-fibre water-fed pole pressed against a sash window, purified water sheeting down the glass">
           </div>
           <div class="service__body">
             <div class="service__top">
               <p class="service__index">01 / Our speciality</p>
               <p class="service__pill">Most requested</p>
             </div>
-            <h3><a href="#contact">Window cleaning &amp; glass restoration</a></h3>
+            <h3><a class="service__title" href="#contact">Window cleaning &amp; glass restoration</a></h3>
             <p>
               Traditional squeegee work where it belongs, and purified-water carbon poles where ladders
               would be reckless. We reach up to 50 ft from the ground, restore windows layered in limescale,
@@ -341,7 +342,7 @@
             <div class="service__top">
               <p class="service__index">02</p>
             </div>
-            <h3><a href="#contact">Gutters, fascia &amp; soffits</a></h3>
+            <h3><a class="service__title" href="#contact">Gutters, fascia &amp; soffits</a></h3>
             <p>Cleared by ladder or powerful gutter vac — up to 45 ft, without walking on your roof tiles.</p>
             <ul class="service__specs">
               <li>No roof walking</li>
@@ -361,7 +362,7 @@
             <div class="service__top">
               <p class="service__index">03</p>
             </div>
-            <h3><a href="#contact">Carpets &amp; upholstery</a></h3>
+            <h3><a class="service__title" href="#contact">Carpets &amp; upholstery</a></h3>
             <p>Steam, hot-water extraction or dry foam — matched to the fibre, not to the clock.</p>
             <ul class="service__specs">
               <li>Fibre-safe</li>
@@ -381,7 +382,7 @@
             <div class="service__top">
               <p class="service__index">04</p>
             </div>
-            <h3><a href="#contact">Floor cleaning &amp; polishing</a></h3>
+            <h3><a class="service__title" href="#contact">Floor cleaning &amp; polishing</a></h3>
             <p>Wood, marble, vinyl, epoxy or stone — deep cleaned, then polished back to its former glory.</p>
             <ul class="service__specs">
               <li>Scrubber-driers</li>
@@ -401,7 +402,7 @@
             <div class="service__top">
               <p class="service__index">05</p>
             </div>
-            <h3><a href="#contact">Power &amp; soft washing</a></h3>
+            <h3><a class="service__title" href="#contact">Power &amp; soft washing</a></h3>
             <p>Patios, driveways and walls up to 20 m — with a 1,000 L tank, 150 m of hose and no splashes left behind.</p>
             <ul class="service__specs">
               <li>20 m walls</li>
@@ -421,7 +422,7 @@
             <div class="service__top">
               <p class="service__index">06</p>
             </div>
-            <h3><a href="#contact">Repeat maintenance</a></h3>
+            <h3><a class="service__title" href="#contact">Repeat maintenance</a></h3>
             <p>Set the dates once and forget them: weekly, monthly, quarterly or yearly, on the same schedule.</p>
             <ul class="service__specs">
               <li>Your calendar</li>
@@ -656,8 +657,8 @@
           <address>
             41 Knights Wood, Lagavooren<br>
             Drogheda, Co. Meath, A92 TPE8<br>
-            <a href="tel:+353870531782">087 053 1782</a><br>
-            <a href="mailto:info@spotlesscleaning.ie">info@spotlesscleaning.ie</a>
+            <a class="prose-link" href="tel:+353870531782">087 053 1782</a><br>
+            <a class="prose-link" href="mailto:info@spotlesscleaning.ie">info@spotlesscleaning.ie</a>
           </address>
           <a class="link" href="https://www.google.com/maps/place/Spotless+Cleaning/@53.699499,-6.3688717,17z" target="_blank" rel="noopener">
             Open in Google Maps <svg aria-hidden="true"><use href="#i-arrow"/></svg>
@@ -675,7 +676,7 @@
           <p class="eyebrow">Questions</p>
           <h2 id="faq-title">The things people ask before booking.</h2>
           <p class="lede" style="margin-top:1rem">Anything else? A text usually gets a faster answer than a form.</p>
-          <p style="margin-top:1.25rem"><a class="link" href="tel:+353870531782">Call 087 053 1782 <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+          <p style="margin-top:1.1rem"><a class="link" href="tel:+353870531782">Call 087 053 1782 <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
         </div>
 
         <div class="faq__list" data-reveal style="--d:.08s">
@@ -850,8 +851,8 @@
           <address>
             41 Knights Wood, Lagavooren<br>
             Drogheda, Co. Meath, A92 TPE8<br>
-            <a href="tel:+353870531782">087 053 1782</a><br>
-            <a href="mailto:info@spotlesscleaning.ie">info@spotlesscleaning.ie</a>
+            <a class="prose-link" href="tel:+353870531782">087 053 1782</a><br>
+            <a class="prose-link" href="mailto:info@spotlesscleaning.ie">info@spotlesscleaning.ie</a>
           </address>
           <ul class="footer__pay" aria-label="Payment methods">
             <li>Card</li><li>Cash</li><li>Bank transfer</li><li>Direct debit</li><li>PayPal</li>

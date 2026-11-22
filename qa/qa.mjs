@@ -56,6 +56,7 @@ for (const vp of VIEWPORTS) {
     deviceScaleFactor: 1,
     isMobile: vp.mobile,
     hasTouch: vp.mobile,
+    reducedMotion: "reduce",
     userAgent: vp.mobile
       ? "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
       : undefined,
@@ -71,7 +72,26 @@ for (const vp of VIEWPORTS) {
   const vpReport = { name: vp.name, size: `${vp.width}x${vp.height}`, checks: {} };
 
   await page.goto(BASE, { waitUntil: "networkidle" });
-  await page.waitForTimeout(500);
+
+  // Scroll the full page to trigger lazy-loaded images and reveals, then return.
+  await page.evaluate(async () => {
+    const step = window.innerHeight * 0.8;
+    for (let y = 0; y < document.body.scrollHeight; y += step) {
+      window.scrollTo(0, y);
+      await new Promise((r) => setTimeout(r, 60));
+    }
+    window.scrollTo(0, 0);
+    await new Promise((r) => setTimeout(r, 120));
+  });
+  // Wait for every <img> to be decoded (or 8s, whichever comes first).
+  await page.evaluate(async () => {
+    const imgs = Array.from(document.images);
+    await Promise.race([
+      Promise.all(imgs.map((i) => (i.complete && i.naturalWidth ? Promise.resolve() : i.decode().catch(() => {})))),
+      new Promise((r) => setTimeout(r, 8000)),
+    ]);
+  });
+  await page.waitForTimeout(300);
 
   /* ---- static layout checks ------------------------------------------- */
   const layout = await page.evaluate(() => {
@@ -180,16 +200,19 @@ for (const vp of VIEWPORTS) {
 
   /* ---- floating action button ----------------------------------------- */
   vpReport.checks.fab = await safe("fab", vp.name, async () => {
-    await page.evaluate(() => window.scrollTo({ top: document.body.scrollHeight * 0.5, behavior: "instant" }));
+    await page.evaluate(() => window.scrollTo({ top: Math.round(document.body.scrollHeight * 0.45), behavior: "instant" }));
     await page.waitForTimeout(600);
     const box = await page.locator("#fabToggle").boundingBox();
     const inView = box && box.x >= -1 && box.y >= -1 &&
       box.x + box.width <= vp.width + 1 && box.y + box.height <= vp.height + 1;
     if (!inView) issue(vp.name, `FAB outside viewport: ${JSON.stringify(box)}`);
-    const hit = box && await page.evaluate(({ x, y, w, h }) => {
-      const el = document.elementFromPoint(x + w / 2, y + h / 2);
-      return !!el && !!el.closest("#fab");
-    }, box);
+    let hit = false;
+    if (box && Number.isFinite(box.x) && Number.isFinite(box.y)) {
+      hit = await page.evaluate(({ x, y, w, h }) => {
+        const el = document.elementFromPoint(Math.round(x + w / 2), Math.round(y + h / 2));
+        return !!el && !!el.closest("#fab");
+      }, box);
+    }
     if (!hit) issue(vp.name, "FAB is covered by another element");
 
     await page.click("#fabToggle");
@@ -259,8 +282,9 @@ for (const vp of VIEWPORTS) {
         .filter((h) => h.length > 1 && !document.getElementById(h.slice(1))));
     if (broken.length) issue(vp.name, `broken in-page anchors: ${[...new Set(broken)].join(", ")}`);
 
-    await page.locator('.nav a[href="#services"], .drawer__link[href="#services"]').first().click();
-    await page.waitForTimeout(1100);
+    const svcLink = page.locator('.nav a[href="#services"]:visible, .drawer__link[href="#services"]:visible').first();
+    await svcLink.click();
+    await page.waitForTimeout(1200);
     const pos = await page.evaluate(() => {
       const s = document.getElementById("services").getBoundingClientRect();
       const h = document.querySelector("#site-header").getBoundingClientRect().height;
