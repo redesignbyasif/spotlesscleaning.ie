@@ -614,7 +614,7 @@ body.menu-open .drawer__contact { animation: drawerIn 0.5s var(--ease-out) 0.32s
   overflow: hidden;
   border-radius: 26px 26px 0 0;
   background: var(--paper-3);
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 3.4;
   box-shadow: var(--shadow-m);
 }
 .hero__frame img {
@@ -1663,6 +1663,6 @@ body.menu-open .fab { opacity: 0; visibility: hidden; }
 }
 
 @media (max-height: 700px) and (max-width: 767px) {
-  .hero__frame { aspect-ratio: 4 / 4.6; }
+  .hero__frame { aspect-ratio: 4 / 3.2; }
   .hero h1 { font-size: clamp(2.35rem, 10.4vw, 3.2rem); }
 }
