@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T14:45:20.080Z",
+  "generated": "2026-11-22T14:49:40.373Z",
   "base": "http://127.0.0.1:8080/",
   "viewports": [
     {
@@ -250,13 +250,13 @@
         "fab": {
           "box": {
             "x": 686,
-            "y": 5939,
+            "y": 5937,
             "width": 58,
             "height": 58
           },
           "probe": {
             "x": 686,
-            "y": 5939,
+            "y": 5937,
             "width": 58,
             "height": 58,
             "cssWidth": "58px",
@@ -284,7 +284,7 @@
           "collapsedHeight": 0
         },
         "anchor": {
-          "sectionTop": 90,
+          "sectionTop": 91,
           "headerH": 76
         },
         "console": {
