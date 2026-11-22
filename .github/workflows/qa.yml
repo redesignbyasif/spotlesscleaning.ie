@@ -4,20 +4,31 @@ on:
   push:
     branches: [main, arena/0009fe00-spotlesscleaning-ie]
   workflow_dispatch:
+    inputs:
+      screenshots:
+        description: "Capture screenshots (adds ~40s)"
+        type: boolean
+        default: true
   pull_request:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   qa:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Install browser tooling
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: pw-${{ runner.os }}-1.47.2
+      - name: Install Playwright
         run: |
           npm init -y >/dev/null 2>&1 || true
           npm i --no-save playwright@1.47.2
@@ -27,11 +38,15 @@ jobs:
           python3 -m http.server 8080 --bind 127.0.0.1 &
           sleep 2
           curl -sf -o /dev/null http://127.0.0.1:8080/ && echo "server ok"
-      - name: Run QA script
+      - name: Run QA suite
+        env:
+          QA_SHOTS: ${{ github.event_name == 'workflow_dispatch' && inputs.screenshots || 'true' }}
         run: node qa/qa.mjs
-      - name: Upload artefacts
+      - name: Upload report and screenshots
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: qa-screenshots
+          name: qa-report
           path: qa/out/
           if-no-files-found: warn
+          retention-days: 14
