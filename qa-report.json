@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T14:40:36.111Z",
+  "generated": "2026-11-22T14:45:20.080Z",
   "base": "http://127.0.0.1:8080/",
   "viewports": [
     {
@@ -34,13 +34,13 @@
         "fab": {
           "box": {
             "x": 294,
-            "y": 7370,
+            "y": 7395,
             "width": 54,
             "height": 54
           },
           "probe": {
             "x": 294,
-            "y": 7370,
+            "y": 7395,
             "width": 54,
             "height": 54,
             "cssWidth": "54px",
@@ -68,7 +68,7 @@
           "collapsedHeight": 0
         },
         "anchor": {
-          "sectionTop": 82,
+          "sectionTop": 83,
           "headerH": 68
         },
         "console": {
@@ -109,13 +109,13 @@
         "fab": {
           "box": {
             "x": 324,
-            "y": 7372,
+            "y": 7406,
             "width": 54,
             "height": 54
           },
           "probe": {
             "x": 324,
-            "y": 7372,
+            "y": 7406,
             "width": 54,
             "height": 54,
             "cssWidth": "54px",
@@ -184,13 +184,13 @@
         "fab": {
           "box": {
             "x": 364,
-            "y": 7438,
+            "y": 7471,
             "width": 54,
             "height": 54
           },
           "probe": {
             "x": 364,
-            "y": 7438,
+            "y": 7471,
             "width": 54,
             "height": 54,
             "cssWidth": "54px",
@@ -245,18 +245,18 @@
         "nav": {
           "navVisible": false,
           "toggleHidden": false,
-          "phoneVisible": false
+          "phoneVisible": true
         },
         "fab": {
           "box": {
             "x": 686,
-            "y": 5920,
+            "y": 5939,
             "width": 58,
             "height": 58
           },
           "probe": {
             "x": 686,
-            "y": 5920,
+            "y": 5939,
             "width": 58,
             "height": 58,
             "cssWidth": "58px",
@@ -284,7 +284,7 @@
           "collapsedHeight": 0
         },
         "anchor": {
-          "sectionTop": 91,
+          "sectionTop": 90,
           "headerH": 76
         },
         "console": {
@@ -316,13 +316,13 @@
         "fab": {
           "box": {
             "x": 942,
-            "y": 5187,
+            "y": 5207,
             "width": 58,
             "height": 58
           },
           "probe": {
             "x": 942,
-            "y": 5187,
+            "y": 5207,
             "width": 58,
             "height": 58,
             "cssWidth": "58px",
@@ -350,7 +350,7 @@
           "collapsedHeight": 0
         },
         "anchor": {
-          "sectionTop": 98,
+          "sectionTop": 99,
           "headerH": 84
         },
         "console": {
@@ -382,13 +382,13 @@
         "fab": {
           "box": {
             "x": 1198,
-            "y": 5460,
+            "y": 5492,
             "width": 58,
             "height": 58
           },
           "probe": {
             "x": 1198,
-            "y": 5460,
+            "y": 5492,
             "width": 58,
             "height": 58,
             "cssWidth": "58px",
@@ -448,13 +448,13 @@
         "fab": {
           "box": {
             "x": 1358,
-            "y": 5617,
+            "y": 5649,
             "width": 58,
             "height": 58
           },
           "probe": {
             "x": 1358,
-            "y": 5617,
+            "y": 5649,
             "width": 58,
             "height": 58,
             "cssWidth": "58px",
