@@ -621,7 +621,7 @@ body.menu-open .drawer__contact { animation: drawerIn 0.5s var(--ease-out) 0.32s
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 52% 46%;
+  object-position: 47% 66%;
 }
 .hero__frame::after {
   content: "";
@@ -1537,7 +1537,7 @@ body.menu-open .fab { opacity: 0; visibility: hidden; }
     max-height: 420px;
     border-radius: 22px;
   }
-  .hero__frame img { object-position: 50% 38%; }
+  .hero__frame img { object-position: 50% 74%; }
   .hero__badge { left: 1.25rem; bottom: 1.25rem; }
   .hero h1 { max-width: 18ch; }
   .hero__caption { padding-bottom: 0.2rem; }
