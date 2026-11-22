@@ -343,7 +343,7 @@ h4 {
   flex: none;
   min-height: 36px;
 }
-.brand__logo { width: clamp(148px, 44vw, 196px); height: auto; }
+.brand__logo { width: clamp(146px, 43vw, 196px); height: auto; }
 .brand__logo--light { display: none; }
 
 .nav { display: none; }
@@ -744,8 +744,6 @@ body.menu-open .drawer__contact { animation: drawerIn 0.5s var(--ease-out) 0.32s
   background: var(--paper-3);
 }
 .about__media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
-.about__media { align-self: stretch; }
-.about__media figure { height: 100%; }
 .about__media-tag {
   position: absolute;
   right: 0.8rem;
@@ -1379,8 +1377,8 @@ body.menu-open .drawer__contact { animation: drawerIn 0.5s var(--ease-out) 0.32s
 /* 20. Floating action button ---------------------------------------------- */
 .fab {
   position: fixed;
-  right: max(14px, env(safe-area-inset-right));
-  bottom: calc(14px + env(safe-area-inset-bottom));
+  right: max(12px, env(safe-area-inset-right));
+  bottom: calc(12px + env(safe-area-inset-bottom));
   z-index: 80;
   display: flex;
   flex-direction: column;
@@ -1432,8 +1430,8 @@ body.menu-open .fab { opacity: 0; visibility: hidden; }
   position: relative;
   display: grid;
   place-items: center;
-  width: 58px;
-  height: 58px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   background: var(--purple);
   color: #fff;
@@ -1520,6 +1518,7 @@ body.menu-open .fab { opacity: 0; visibility: hidden; }
   .trust__item:nth-child(1) { border-left: 0; padding-left: 0; }
   .trust__item:nth-child(even) { padding-left: 1.1rem; }
   .about__grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 3rem; align-items: start; }
+  .about__media { position: sticky; top: calc(var(--header-h) + 2rem); }
   .about__media img { aspect-ratio: 3 / 4; }
   .services__head { grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr); align-items: end; gap: 2rem; }
   .services__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -1539,13 +1538,16 @@ body.menu-open .fab { opacity: 0; visibility: hidden; }
   .faq__grid { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 3rem; align-items: start; }
   .faq__head { position: sticky; top: calc(var(--header-h) + 2rem); }
   .cta__actions .btn { flex: 0 1 auto; }
-  .cta__inner { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 3rem; align-items: end; }
+  .cta__inner { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 3.5rem; align-items: end; }
+  .cta__side { border-left: 1px solid rgba(251, 248, 243, 0.16); padding-left: 2.25rem; }
+  .cta__contact { border-top: 0; padding-top: 0; margin-top: 0; }
   .cta__side { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; }
   .footer__top { grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); gap: 3rem; }
   .footer__cols { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer__bottom { flex-direction: row; align-items: center; justify-content: space-between; gap: 2rem; }
   .site-footer { padding-bottom: 1.5rem; }
-  .fab { right: 22px; bottom: 22px; }
+  .fab { right: 24px; bottom: 24px; }
+  .fab__toggle { width: 58px; height: 58px; }
 }
 
 @media (min-width: 900px) {
@@ -1580,6 +1582,7 @@ body.menu-open .fab { opacity: 0; visibility: hidden; }
   .case:first-child { grid-column: span 3; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); }
   .gallery__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.75rem; }
   .shot--wide { grid-column: span 2; }
+  .shot--end { grid-column: span 2; }
   .clients__track { gap: 3.5rem; }
   .clients__group { gap: 3.5rem; }
   .number { padding: 1.6rem 1.35rem; }
