@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+# Manual only: this concept is served from a project sub-path so it never
+# replaces the live spotlesscleaning.ie site.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish site to gh-pages branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          mkdir -p /tmp/site
+          cp -R index.html css js assets .nojekyll /tmp/site/
+
+          # Sanity checks before publishing
+          test -f /tmp/site/index.html
+          test -f /tmp/site/css/style.css
+          test -f /tmp/site/js/script.js
+          grep -q 'robots' /tmp/site/index.html
+          du -sh /tmp/site
+
+          cd /tmp/site
+          git init -q
+          git checkout -q -b gh-pages
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Deploy Spotless Cleaning homepage concept"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" gh-pages
+      - name: Job summary
+        run: |
+          echo "### Published to the \`gh-pages\` branch" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Enable Pages once (Settings → Pages → Source: *Deploy from a branch* → \`gh-pages\` / root)." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Live URL will then be: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY
