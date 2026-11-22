@@ -1,4 +1,6 @@
 qa/out/
+qa/screenshots/
+qa-report.json
 node_modules/
 package.json
 package-lock.json
