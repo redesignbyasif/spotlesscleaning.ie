@@ -338,6 +338,7 @@ h4 {
   align-items: center;
   gap: 0.6rem;
   flex: none;
+  min-height: 36px;
 }
 .brand__logo { width: clamp(148px, 44vw, 196px); height: auto; }
 .brand__logo--light { display: none; }
@@ -1274,6 +1275,7 @@ body.menu-open .drawer__contact { animation: drawerIn 0.5s var(--ease-out) 0.32s
 }
 .footer__top { display: grid; gap: 2rem; }
 .footer__brand .brand__logo { width: 190px; }
+.footer__brand .brand { min-height: 40px; }
 .footer__brand p { margin-top: 1rem; max-width: 30ch; font-size: 0.9rem; color: var(--ink-soft); }
 .footer__socials { display: flex; gap: 0.4rem; margin-top: 1.25rem; }
 .footer__socials a {

@@ -16,7 +16,7 @@ import path from "node:path";
 
 const BASE = process.env.QA_URL || "http://127.0.0.1:8080/";
 const OUT = path.join(process.cwd(), "qa", "out");
-const SHOTS = process.env.QA_SHOTS === "1"; // set to 1 to capture screenshots
+const SHOTS = ["1", "true", "yes"].includes(String(process.env.QA_SHOTS || "").toLowerCase());
 fs.mkdirSync(OUT, { recursive: true });
 
 const VIEWPORTS = [
@@ -318,14 +318,43 @@ for (const vp of VIEWPORTS) {
     return pos;
   });
 
-  /* ---- full page -------------------------------------------------------- */
+  /* ---- screenshots ------------------------------------------------------ */
   if (SHOTS) {
-    await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
-    await page.waitForTimeout(400);
-    // force all reveals visible so the full-page shot is representative
-    await page.evaluate(() => document.querySelectorAll("[data-reveal]").forEach((el) => el.classList.add("is-visible")));
-    await page.waitForTimeout(600);
-    await shot(page, `${vp.name}-full.jpg`, true);
+    await page.evaluate(() => {
+      document.querySelectorAll("[data-reveal]").forEach((el) => el.classList.add("is-visible"));
+      window.scrollTo({ top: 0, behavior: "instant" });
+    });
+    await page.waitForTimeout(500);
+
+    const SECTIONS = [
+      ["hero", null],
+      ["about", "#why-us"],
+      ["services", "#services"],
+      ["process", ".process"],
+      ["proof", "#work"],
+      ["gallery", ".gallery"],
+      ["areas", "#areas"],
+      ["faq", "#faq"],
+      ["cta", "#contact"],
+      ["footer", ".site-footer"],
+    ];
+    const deep = ["1440-desktop", "390-mobile"].includes(vp.name);
+
+    for (const [label, sel] of SECTIONS) {
+      if (label !== "hero" && !deep) continue;
+      if (sel) {
+        await page.evaluate((s) => {
+          const el = document.querySelector(s);
+          if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 2, behavior: "instant" });
+        }, sel);
+        await page.waitForTimeout(350);
+      }
+      await page.screenshot({
+        path: path.join(OUT, `${vp.name}-${label}.jpg`),
+        type: "jpeg",
+        quality: 62,
+      });
+    }
   }
 
   if (errors.length) issue(vp.name, `console errors: ${errors.slice(0, 5).join(" | ")}`);
